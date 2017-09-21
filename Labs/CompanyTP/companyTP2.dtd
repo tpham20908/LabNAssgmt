@@ -10,7 +10,7 @@
 <!ELEMENT CurrentDate (#PCDATA)>
 <!-- Declare the Today entity -->
 <!-- Syntax: <!ENTITY entity_name "entity_value" > -->
-<!-- <!ENTITY Today "September, 21 2017" > -->
+<!ENTITY Today "September, 21 2017">
 
 <!-- Define the Name element -->
 <!ELEMENT Name (#PCDATA)>
