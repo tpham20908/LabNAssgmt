@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD document for XML_CompanyTP -->
+<!-- Developed by: Tung Pham -->
+<!-- Script Date: September 20, 2017 -->
+<!-- The CompanyTP element has a Name and multiple Departments -->
+<!ELEMENT CompanyTP (Name, Department+)>
+<!-- Define the Name element -->
+<!ELEMENT Name (#PCDATA)>
+<!-- The Department element has one Name and zero or many Employee(s) -->
+<!ELEMENT Department (Name, Employee*)>
+<!-- The Employee element has EmployeeID, FirstName and LastName elements -->
+<!ELEMENT Employee (EmpoyeeID, FirstName, LastName)>
+<!-- Define Employee children elements -->
+<!ELEMENT EmployeeID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>

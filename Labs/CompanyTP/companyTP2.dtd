@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!ELEMENT ENTER_NAME_OF_ROOT_ELEMENT_HERE EMPTY> -->
+<!-- DTD document for XML_CompanyTP -->
+<!-- Developed by: Tung Pham -->
+<!-- Script Date: September 20, 2017 -->
+<!-- The CompanyTP element has a Name and multiple Departments -->
+<!ELEMENT CompanyTP (CurrentDate, Name, Department+)>
+
+<!-- Define CurrentDate -->
+<!ELEMENT CurrentDate (#PCDATA)>
+<!-- Declare the Today entity -->
+<!-- Syntax: <!ENTITY entity_name "entity_value" > -->
+<!-- <!ENTITY Today "September, 21 2017" > -->
+
+<!-- Define the Name element -->
+<!ELEMENT Name (#PCDATA)>
+<!-- The Department element has one Name and zero or many Employee(s) -->
+<!ELEMENT Department (Name, Employee*)>
+<!-- The Employee element has EmployeeID, FirstName, LastName and Status (FullTime or PartTime)elements -->
+<!ELEMENT Employee (EmployeeID, FirstName, LastName, (PartTime | FullTime))>
+<!-- Define Employee children elements -->
+<!ELEMENT EmployeeID (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+
+<!-- The PartTime ele is an empty ele with an attribute named HourlyRate equals to $50.00 -->
+<!ELEMENT PartTime EMPTY>
+<!ATTLIST PartTime HourlyRate CDATA "$50.00">
+
+<!-- FullTime ele has single child ele named StockOptionsGrant that may display zero or many times -->
+<!ELEMENT FullTime (StockOptionsGrant*)>
+
+<!-- FullTime ele has 2 attributes: Salary and Benefit package. The benefit package can be BPkg1, BPkg2 -->
+<!ATTLIST FullTime 
+	Salary CDATA #REQUIRED
+	Benefit (BPkg1 | BPkg2 | BPkg3) "BPkg1">
+
+<!-- The StockOptionsGrant ele is an empty ele with 2 atributes: TotalOptions and StrikePrice -->
+<!ELEMENT StockOptionsGrant EMPTY>
+<!ATTLIST StockOptionsGrant
+	TotalOptions CDATA #REQUIRED
+	StrikePrice CDATA #REQUIRED>

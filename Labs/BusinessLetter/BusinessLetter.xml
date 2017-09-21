@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BusinessLetter SYSTEM "BusinessLetter.dtd">
+<BusinessLetter>
+	<Sender>
+		<FirstName>John</FirstName>
+		<LastName>Smith</LastName>
+		<Address>
+			<AptNum>123</AptNum>
+			<StrNum>29</StrNum>
+			<StrName>Sainte Catherine</StrName>
+			<City>Montreal</City>
+			<Province>QC</Province>
+			<CodePostal>H3S1K8</CodePostal>
+			<Country>Canada</Country>
+		</Address>
+	</Sender>
+	<Date>
+		<Year>2017</Year>
+		<Month>September</Month>
+		<Day>20</Day>
+	</Date>
+	<Receiver>
+		<FirstName>Alan</FirstName>
+		<LastName>Gaudet</LastName>
+		<Address>
+			<AptNum>BH116</AptNum>
+			<StrNum>21275</StrNum>
+			<StrName>LakeShore</StrName>
+			<City>Sainte Anne De Bellevue</City>
+			<Province>QC</Province>
+			<CodePostal>H4T2G6</CodePostal>
+			<Country>Canada</Country>
+		</Address>
+	</Receiver>
+	<LetterContent>
+		<Greeting>Dear Sir</Greeting>
+		<MainContent>lkasd lasdjf asfkljs </MainContent>
+		<Ending>Looking forward to see you soon.</Ending>
+	</LetterContent>
+</BusinessLetter>

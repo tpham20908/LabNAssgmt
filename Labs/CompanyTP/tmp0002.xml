@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CompanyTP SYSTEM "companyTP2.dtd">
+<CompanyTP>
+	<CurrentDate>ECMA</CurrentDate>
+	<Name>
+	</Name>
+	<Department>
+		<Name>IT Dept.</Name>
+		<Employee>
+			<EmployeeID>_101</EmployeeID>
+			<FirstName>ADF</FirstName>
+			<LastName>WEI</LastName>
+			<PartTime HourlyRate="$50.00"></PartTime>
+		</Employee>
+		<Employee>
+			<EmployeeID>_102</EmployeeID>
+			<FirstName>GD</FirstName>
+			<LastName>WE</LastName>
+			<FullTime Salary="$75.00" Benefit="BPkg2">
+				<StockOptionsGrant StrikePrice="$2.5" TotalOptions="$1200"></StockOptionsGrant>
+			</FullTime>
+		</Employee>
+	</Department>
+</CompanyTP>

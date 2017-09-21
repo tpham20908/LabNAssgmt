@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CompanyTP SYSTEM "companyTP.dtd">
+<CompanyTP>
+	<Name></Name>
+	<Department>
+		<Name></Name>
+		<Employee>
+			
+		</Employee>
+	</Department>
+</CompanyTP>
