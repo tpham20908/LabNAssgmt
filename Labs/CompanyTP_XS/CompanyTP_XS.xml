@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompanyTP_XS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://jacstudents/students/1796137/TP/JAC/LabNAssgmt/Labs/CompanyTP_XS/CompanyTP_XS.xsd">
+	<Address xsi:type="Can_Address" >
+		<StreetName></StreetName>
+		<City></City>
+		<Region></Region>
+		<Country></Country>
+		<Postal>H1Z3K7</Postal>
+	</Address>
+	<Person>
+		<FirstName>John</FirstName>
+		<LastName>Doe</LastName>
+		<Phone>5145676789</Phone>
+		<PhoneExt>32</PhoneExt>
+		<Email>johndoe@email.com</Email>
+	</Person>
+</CompanyTP_XS>

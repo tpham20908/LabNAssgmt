@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by TP (JAC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="CompanyTP_XS">
+		<xs:annotation>
+			<xs:documentation>CompanyTP_XS Schema Declaration - 2017</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Address" type="AddressType"/>
+				<xs:element name="Person">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FirstName" type="xs:string"/>
+							<xs:element name="LastName" type="xs:string"/>
+							<xs:element name="Phone" type="xs:integer"/>
+							<xs:element name="PhoneExt">
+								<xs:simpleType>
+									<xs:restriction base="xs:integer">
+										<xs:maxInclusive value="99"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Fax" type="xs:integer" minOccurs="0"/>
+							<xs:element name="Email" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AddressType">
+		<xs:sequence>
+			<xs:element name="StreetName" type="xs:string"/>
+			<xs:element name="City" type="xs:string"/>
+			<xs:element name="Region" type="xs:string"/>
+			<xs:element name="Country" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Can_Address">
+		<xs:annotation>
+			<xs:documentation>Canadian Address</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="Postal" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="US_Address">
+		<xs:annotation>
+			<xs:documentation>USA Address</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="AddressType">
+				<xs:sequence>
+					<xs:element name="Zip" type="xs:string"></xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

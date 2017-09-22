@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="CompanyTP_XS">
+		<xs:annotation>
+			<xs:documentation>CompanyTP_XS Schema Declaration - 2017</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Address" type="xs:String"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
